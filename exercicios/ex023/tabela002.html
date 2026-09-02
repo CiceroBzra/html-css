@@ -13,8 +13,14 @@
 
         table {
 
-            width: 500ps;
+            width: 480px;
              border-collapse: collapse;
+        }
+        caption{
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold ;
+          background-color: rgb(175, 181, 192);
+          padding: 10px;
         }
 
         thead, tfoot{
@@ -33,300 +39,285 @@
             text-align: right;
         }
 
+        tbody > tr:nth-child(2n) { /* odd ou 2n-1 (impares), even ou 2n (par) */
+          background-color: darkolivegreen;
+          color: white;
+
+        }
+
 
     </style>
 </head>
 <body>
     <h1>Anatomia para Tabelas Grandes</h1>
 
-            <table>
+<table>
 
+<caption> População das Unidades Federativas </caption>
+    
+<thead>
 
-                    <thead>
+        <tr>
+            <th scope="col"> Estado </th>
+            <th scope="col" style="width: 90px;"> População </th>
 
-                        <tr>
-                            <th> Estado </th>
-                            <th>População</th>
+        </tr>
 
-                        </tr>
+    </thead>
 
-                    </thead>
+    <tbody>
 
-                    <tbody>
+        <tr>
+            <td> São Paulo </td>
 
-                        <tr>
-                            <td> São Paulo </td>
+            <td class="num"> 45 919 049 </td>
+        </tr>
 
-                            <td>45 919 049 </td>
-                        </tr>
+        <tr>
+            <td> Minas Gerais </td>
 
-                        <tr>
-                            <td> Minas Gerais </td>
+            <td class="num"> 21 168 791 </td>
 
-                            <td> 21 168 791 </td>
-
-                         </tr>
+         </tr>
                          
-                         <tr>
-                            <td> Rio de Janeiro  </td>
+          <tr>
+             <td> Rio de Janeiro </td>
 
-                            <td> 17 264 943 </td>
+             <td class="num"> 17 264 943 </td>
                             
-                         </tr> 
+          </tr> 
 
-                          <tr>
+          <tr>
 
-                            <td> Bahia  </td>
+            <td> Bahia  </td>
 
-                            <td class="num"> 14 873 064 </td>
+            <td class="num"> 14 873 064 </td>
                             
-                         </tr> 
+          </tr> 
 
-                         <tr>
+          <tr>
                             
-                            <td> Paraná  </td>
+            <td> Paraná  </td>
 
-                            <td class="num"> 11 433 957 </td>
+            <td class="num"> 11 433 957 </td>
                             
-                         </tr> 
+          </tr> 
 
-                         <tr>
+          <tr>
 
-                            <td> 
-                            Rio Grande do sul  </td>
+             <td> Rio Grande do sul </td>
 
-                            <td class="num"> 11 377 239 </td>
+            <td class="num"> 11 377 239 </td>
                             
-                         </tr> 
+          </tr> 
 
-                         <tr>
+          <tr>
 
-                            <td>
-                            Pernambuco  </td>
+            <td> Pernambuco </td>
 
-                            <td class="num"> 9 557 071 </td>
+            <td class="num"> 9 557 071 </td>
                             
-                         </tr> 
+          </tr> 
 
-                          <tr>
+          <tr>
 
-                            <td> 
-                           ceará </td>
+             <td> ceará </td>
 
-                            <td class="num"> 9 132 078 </td>
+            <td class="num"> 9 132 078 </td>
                             
-                         </tr> 
+          </tr> 
 
-                          <tr>
+          <tr>
 
-                            <td> 
-                           Pará</td>
+            <td> Pará </td>
 
-                            <td class="num"> 8 602 865 </td>
+            <td class="num"> 8 602 865 </td>
                             
-                         </tr> 
+          </tr> 
 
-                          <tr>
+          <tr>
 
-                            <td> 
-                          Santa Catarina </td>
+            <td> Santa Catarina </td>
 
-                            <td class="num"> 7 164 788 </td>
+             <td class="num"> 7 164 788 </td>
                             
-                         </tr> 
+          </tr> 
 
-                          <tr>
+          <tr>
 
-                            <td> 
-                          Maranhão </td>
+            <td> Maranhão </td>
 
-                            <td class="num"> 7 075 181 </td>
+            <td class="num"> 7 075 181 </td>
                             
-                         </tr> 
+          </tr> 
 
-                          <tr>
+          <tr>
 
-                            <td> 
-                           Goiás </td>
+            <td> Goiás </td>
 
-                            <td class="num">7 018 354 </td>
+            <td class="num">7 018 354 </td>
                             
-                         </tr> 
+          </tr> 
 
-                          <tr>
+          <tr>
 
-                            <td> 
-                          Amazonas </td>
+             <td> Amazonas </td>
 
-                            <td class="num"> 4 144 597 </td>
+            <td class="num"> 4 144 597 </td>
                             
-                         </tr> 
+          </tr> 
 
-                          <tr>
+           <tr>
 
-                            <td> 
-                           ceará </td>
+            <td> ceará </td>
 
-                            <td class="num"> 9132 078 </td>
+            <td class="num"> 9 132 078</td>
                             
-                         </tr> 
+          </tr> 
 
-                          <tr>
+          <tr>
 
-                            <td> 
-                           Espírito Santo </td>
+            <td> Espírito Santo </td>
 
-                            <td class="num"> 4 018  650 </td>
+            <td class="num"> 4 018  650 </td>
                             
-                         </tr> 
+          </tr> 
 
-                          <tr>
+          <tr>
 
-                            <td> 
-                          Paraíba </td>
+            <td> Paraíba </td>
 
-                            <td class="num"> 4 018 127 </td>
+            <td class="num"> 4 018 127 </td>
                             
-                         </tr> 
+          </tr> 
 
-                          <tr>
+          <tr>
 
-                            <td> 
-                          Rio Grande do Norte </td>
+            <td> Rio Grande do Norte </td>
 
-                            <td class="num">3 506 853 </td>
+            <td class="num">3 506 853 </td>
                             
-                        </tr>
+        </tr>
                          
-                          <tr>
+          <tr>
 
-                            <td> 
-                           Mato Grosso </td>
+            <td> Mato Grosso </td>
 
-                            <td class="num"> 3 484 466 </td>
+            <td class="num"> 3 484 466 </td>
                             
-                        </tr> 
+        </tr> 
 
-                        </tr>
+        </tr>
                          
-                          <tr>
+          <tr>
 
-                            <td> 
-                           Alagoas </td>
+            <td> Alagoas </td>
 
-                            <td class="num"> 3 377 357 </td>
+            <td class="num"> 3 377 357 </td>
                             
-                        </tr> 
+        </tr> 
 
-                        </tr>
+        </tr>
                          
-                          <tr>
+          <tr>
 
-                            <td> 
-                          Piauí </td>
+            <td> Piauí </td>
 
-                            <td class="num"> 3 273 227 </td>
+            <td class="num"> 3 273 227 </td>
                             
-                        </tr> 
+        </tr> 
 
-                        </tr>
+        </tr>
                          
-                          <tr>
+          <tr>
 
-                            <td> 
-                           Distrito Federal </td>
+            <td> Distrito Federal </td>
 
-                            <td class="num"> 3 015 268 </td>
+            <td class="num"> 3 015 268 </td>
                             
-                        </tr>
+        </tr>
                         
-                        </tr>
+        </tr>
                          
-                          <tr>
+          <tr>
 
-                            <td> 
-                           Mato Grosso do Sul </td>
+            <td> Mato Grosso do Sul </td>
 
-                            <td class="num"> 2 778 986 </td>
+            <td class="num"> 2 778 986 </td>
                             
-                        </tr> 
+        </tr> 
 
-                        </tr>
+        </tr>
                          
-                          <tr>
+          <tr>
 
-                            <td> 
-                           sergipe </td>
+            <td> sergipe </td>
 
-                            <td class="num"> 2 298 696 </td>
+            <td class="num"> 2 298 696 </td>
                             
-                        </tr>
+        </tr>
                         
-                        </tr>
+        </tr>
                          
-                          <tr>
+           <tr>
 
-                            <td> 
-                           rondônia </td>
+            <td> rondônia </td>
 
-                            <td class="num"> 1 777 225 </td>
+            <td class="num"> 1 777 225 </td>
                             
-                        </tr> 
+        </tr> 
 
-                        </tr>
+        </tr>
                          
-                          <tr>
+          <tr>
 
-                            <td> 
-                           Tocantins </td>
+            <td> Tocantins </td>
 
-                            <td class="num"> 1 572 866 </td>
+            <td class="num"> 1 572 866 </td>
                             
-                        </tr>
+        </tr>
                         
-                        </tr>
+        </tr>
                          
-                          <tr>
+          <tr>
 
-                            <td> 
-                           Acre </td>
+            <td> Acre </td>
 
-                            <td class="num"> 881 935 </td>
+            <td class="num"> 881 935 </td>
                             
-                        </tr> 
+        </tr> 
 
-                        </tr>
+        </tr>
                          
-                          <tr>
+          <tr>
 
-                            <td> 
-                           Amapá </td>
+            <td> Amapá </td>
 
-                            <td class="num"> 845 731 </td>
+            <td class="num"> 845 731</td>
                             
-                        </tr> 
+        </tr> 
                          
-                        <tr>
+        <tr>
                            
-                            <td> Roraima </td>
-                            <td class="num">  605 761 </td>
+            <td> Roraima </td>
+            <td class="num"> 605 761 </td>
                             
-                        </tr> 
+        </tr> 
 
-                    </tbody>
+    </tbody>
 
-                        <tfoot>
+          <tfoot>
 
-                            <tr>
-                                <th> Total de habitantes</th>
+            <tr>
+                <th scope="row"> Total de habitantes</th>
 
-                                <td> <strong>210 147 125</strong></td>
+                <td> <strong>210 147 125</strong></td>
 
-                            </tr>
+            </tr>
 
-                        </tfoot>
+         </tfoot>
              
-            </table>
+</table>
 
 </body>
 </html>
