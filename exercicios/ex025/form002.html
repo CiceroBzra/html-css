@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulariod </title>
+</head>
+<body>
+
+    <h1> Meu primeiro Formulário </h1>
+
+     <!-- autocomplete="on" Sugere textos automaticamente -->
+
+    <form action="cadastro.php" method="post" autocomplete="on"> 
+
+        <p>
+            <label for="iusu" > Usuário: </label>
+
+            <!-- "required" obrigatório o preenchimento dos campos para enviar -->
+            <!-- minlength="" Indica o mínimo de dígitos permitidos -->
+            <!-- maxlength="" Indica o máximo de dígitos permitidos -->
+            <!-- size="" Indica o tamahno da Caixa -->
+            <!-- placeholder="" Controla o Tamano da Caixa -->
+            <!-- autocomplete="on" Sugere nomes/textos que foram digitados -->
+             <!-- autocomplete=" " no input indica o tipo de prenchimento do campo: autocomplete="username" para nome de usuário, autocomplete="current-password" para senha atual e autocomplete="new-password" para nova senha-->
+             
+            <input type="text" name="usu" id="isu" required minlength="5" size="15" placeholder="Nome do Usuário" autocomplete="username">
+        
+        </p>
+
+        <p> 
+            <label for="isen"> Senha:</label>
+             <input type="password" name="sen" id="isen" required minlength="8" maxlength="15" size="15" placeholder="Senha" autocomplete="current-password"> 
+        </p>
+
+        <p> <input type="submit" value="Enviar"> </p>
+        <p> <input type="reset" value="limpar" > </p> <!-- Botão de Limpeza -->
+    </form>
+
+    
+</body>
+</html>
