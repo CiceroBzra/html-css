@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário </title>
+
+</head>
+<body>
+
+    <h1 > Gráfico de Cor e de Nivel de Satisfação </h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <!-- value="blue" Configura uma Cor Incial como Padrão -->
+
+            <label for="icor"> Cor: </label>
+            <input type="color" name="cor" id="icor" value="blue">
+        </p>
+
+        <p>
+            <!-- Nível de Satisfação é de 0 a 100 por padrão -->
+            <!-- Os Atributos min="" e max="" modifica o nível de medidas que tem padrão de 0 a 100 -->
+            <!-- O Atributo value="" configura um número como Ponto de Partida do nível -->
+             
+            <label for="icor"> Nível de Satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="5" max="20" value="2">
+        </p>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+    
+</body>
+</html>
