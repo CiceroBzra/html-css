@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário </title>
+</head>
+<body>
+    
+    <h1> Formulários </h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+    <p>
+        <label for="iestado"> Estados: </label>
+        
+        <select name="estado" id="iestado">
+
+        <option value=""> --- Escolha --- </option>
+
+        <optgroup label="Sudeste">
+
+            <!-- O Atributo "Selected" Personaliza qual estado já estará a aparecer no campode opções de escolha -->
+            <option value="MG"> Minas Gerais </option>
+            <option value="RJ"> Rio de Janeiro </option>
+            <option value="SP" selected> São Paulo </option>
+        </optgroup>
+
+        <optgroup label="Nordeste">
+
+            <option value="MG"> Maranhão </option>
+            <option value="PE"> Pernambuco </option>
+            <option value="RN"> Rio Grande do Norte </option>
+
+        </optgroup>
+
+        </select>
+    </p>
+
+
+
+        <p>
+            
+            <label for="iprof"> Profissão: </label>
+            <input type="text" name="Prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+
+                <option value="ADM"> Admnistrador </option>
+                <option value="MED"> Médico </option>
+                <option value="CONT"> Contador</option>
+
+            </datalist>
+
+
+        </p>
+
+     <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+
+
+    </form>
+
+</body>
+</html>
