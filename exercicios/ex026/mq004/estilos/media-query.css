@@ -12,18 +12,90 @@ Pequenas Telas: Até 600px
     Grandes Telas-TVs: Acima de 1200px
 */
 
-@media print {
+@media print { /* Impressora */
+
+    body{ 
+        
+        background-image: url(../imagens/back-print.jpg); /* Desnecessário */
+
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+
+        border: 2px solid black;
+    }
+
+    main h1 {
+
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+
+        content: "Estudo de 03/10/2026";
+       font-size: 6px;
+    }
+
+    img#phone {display: none}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+
 
 }
 
-@media screen and (min-width: 768px) and (max-wit: 992px) { /*Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Tablet */
+
+    body{ 
+        
+        background-image: url(../imagens/back-tablet.jpg);
+    
+    }
+
+    img#phone {display: none}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
 
 }
 
-@media screen and (min-width: 992px) and (max-wit: 1200px) { /* desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* desktop */
+
+    body{ 
+        
+        background-image: url(../imagens/back-pc.jpg);
+    
+    }
+
+    img#phone {display: none}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
 
 }
 
-@media screen and (min-width: 1200px) and (max-wit: 1200px) { /* Grandes Telas */
+
+@media screen and (min-width: 1200px) { /* Grandes Telas */
+
+    body{ 
+        
+        background-image: url(../imagens/back-tv.jpg);
+    
+    }
+
+    main{
+
+        width: 700px;
+    }
+
+    img#phone {display: none}
+    img#tablet {display: none;}
+    img#print {display:none;}
+    img#tv {display: block;}
 
 }
